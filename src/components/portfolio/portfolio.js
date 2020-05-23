@@ -1,10 +1,14 @@
-import React from "react"
+import React, { Component } from react;
 
-function Portfolio()  {
-    return (
-        <h1>Portfolio</h1>
-        
-    )
-} 
 
-export default Portfolio
+class Portfolio extends Component {
+    render() {
+        return (
+            <div>
+                <h1>Portfolio Page</h1>
+            </div>
+        )
+    }
+}
+
+export default Portfolio;
