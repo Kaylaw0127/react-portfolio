@@ -1,31 +1,33 @@
 import React from "react";
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from './components/navbar/navbar'
-import About from "./components/about/about";
-import Portfolio from "./components/portfolio/portfolio";
-import Contact from "./components/contact/contact";
-import Resume from "./components/resume/resume";
-// import { Content } from "react-mdl";
-
+import { Link } from "react-router-dom";
+import { Layout, Navigation, Drawer, Content, Header} from 'react-mdl';
+import Main from "./components/main/main";
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <About />
-        </Route>
-        <Route exact path="/portfolio">
-          <Portfolio />
-        </Route>
-        <Route exact path="/contact">
-          <Contact />
-        </Route>
-        <Route exact path="/resume">
-          <Resume />
-        </Route>
-      </Switch>
-    </Router>
+    <div className="demo-big-content">
+    <Layout>
+        <Header title="Kayla Ward" scroll>
+            <Navigation>
+                <Link to="/">About</Link>
+                <Link to="/portfolio">Portfolio</Link>
+                <Link to="/contact">Contact</Link>
+            </Navigation>
+        </Header>
+        <Drawer title="">
+            <Navigation>
+                <Link to="/resume">Resume</Link>
+                <Link to="https://www.linkedin.com/in/kaylaw0127/"> LinkedIn <i className="fa fa-linkedin-square"></i></Link>
+                <Link to="https://github.com/Kaylaw0127">Github <i className="fa fa-github"></i></Link>
+            </Navigation>
+        </Drawer>
+        <Content>
+          <div className="page-content" />
+          <Main />
+        </Content>
+      </Layout>
+    </div>
+
   );
 }
 

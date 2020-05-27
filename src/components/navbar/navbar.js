@@ -17,8 +17,8 @@ function Navbar()  {
             <Drawer title="">
                 <Navigation>
                     <Link to="/resume">Resume</Link>
-                    <Link to="https://www.linkedin.com/in/kaylaw0127/">LinkedIn</Link>
-                    <Link to="https://github.com/Kaylaw0127">Github</Link>
+                    <Link to="https://www.linkedin.com/in/kaylaw0127/"> LinkedIn <i className="fa fa-linkedin-square"></i></Link>
+                    <Link to="https://github.com/Kaylaw0127">Github <i className="fa fa-github"></i></Link>
                 </Navigation>
             </Drawer>
           </Layout>
