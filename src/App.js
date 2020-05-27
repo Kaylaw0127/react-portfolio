@@ -1,26 +1,32 @@
-import React, { Component } from "react";
+import React from "react";
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from './components/navbar/navbar'
 import About from "./components/about/about";
-import Contact from "./components/contact/contact";
-import Navbar from "./components/navbar/navbar";
 import Portfolio from "./components/portfolio/portfolio";
-import 'react-mdl/extra/material.css';
-import 'react-mdl/extra/material.js';
+import Contact from "./components/contact/contact";
+import Resume from "./components/resume/resume";
+// import { Content } from "react-mdl";
 
-
-class App extends Component {
-  render() {
-    return (
-      <div>
-          <Navbar />
+function App() {
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/">
           <About />
-          <Contact />
+        </Route>
+        <Route exact path="/portfolio">
           <Portfolio />
-        
-      </div>
-      
-    )
-}
+        </Route>
+        <Route exact path="/contact">
+          <Contact />
+        </Route>
+        <Route exact path="/resume">
+          <Resume />
+        </Route>
+      </Switch>
+    </Router>
+  );
 }
 
 export default App;
