@@ -5,7 +5,10 @@ import picture from './profile-pic.jpg';
 class About extends Component {
     render() {
         return (
-            <div style={{ width: "100%", margin: "auto" }}>
+            <div
+              style={{
+                 backgroundImage: `url("contemporary_china.png")`,backgroundRepeat: 'repeat',width:'1500px',height:'1000px',color:'white'
+              }}> 
             <Grid className="landing-grid">
               <Cell col={12}>
               <img src= {picture} alt="ProfilePic" />

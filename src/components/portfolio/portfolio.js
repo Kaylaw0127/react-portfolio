@@ -5,7 +5,10 @@ import { Card, CardTitle, CardActions, Button, CardMenu, IconButton, CardText } 
 class Portfolio extends Component {
     render() {
         return (
-       <div className="container">
+       <div
+       style={{
+          backgroundImage: `url("contemporary_china.png")`,backgroundRepeat: 'repeat',width:'1500px',height:'1000px',color:'white'
+       }}>
            <div className="row">
                 <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
                 <CardTitle expand style={{color: '#fff', background: 'url() center/ cover no-repeat #46B6AC'}}>Bug Out</CardTitle>
@@ -35,7 +38,7 @@ class Portfolio extends Component {
                 href="https://meals-mates.herokuapp.com/" target="_blank">
                 PREVIEW
               </Button>
-              <Button colored href="https://github.com/Kaylaw0127/meal-mate">
+              <Button colored href="https://github.com/Kaylaw0127/meal-mate" target="_blank">
                 GITHUB
               </Button>
                 </CardActions>
@@ -54,7 +57,7 @@ class Portfolio extends Component {
                 href="https://kaylaw0127.github.io/Up-Above/" target="_blank">
                 PREVIEW
               </Button>
-              <Button colored href="https://github.com/Kaylaw0127/Up-Above">
+              <Button colored href="https://github.com/Kaylaw0127/Up-Above" target="_blank">
                 GITHUB
               </Button>
                 </CardActions>
@@ -71,7 +74,7 @@ class Portfolio extends Component {
                 href="https://eeatdaburgz.herokuapp.com/" target="_blank">
                 PREVIEW
               </Button>
-              <Button colored href="https://github.com/Kaylaw0127/burger">
+              <Button colored href="https://github.com/Kaylaw0127/burger" target="_blank">
                 GITHUB
               </Button>
                 </CardActions>
@@ -89,7 +92,7 @@ class Portfolio extends Component {
                 href="https://kaylaw0127.github.io/day-planner/" target="_blank">
                 PREVIEW
               </Button>
-              <Button colored href="https://github.com/Kaylaw0127/day-planner">
+              <Button colored href="https://github.com/Kaylaw0127/day-planner" target="_blank">
                 GITHUB
               </Button>
                 </CardActions>
@@ -106,7 +109,7 @@ class Portfolio extends Component {
                 href="https://kaylaw0127.github.io/weather-dash/" target="_blank">
                 PREVIEW
               </Button>
-              <Button colored href="https://github.com/Kaylaw0127/weather-dash">
+              <Button colored href="https://github.com/Kaylaw0127/weather-dash" target="_blank">
                 GITHUB
               </Button>
                 </CardActions>

@@ -17,8 +17,8 @@ function App() {
         <Drawer title="">
             <Navigation>
                 <Link to="/resume">Resume</Link>
-                <Link to="https://www.linkedin.com/in/kaylaw0127/"> LinkedIn <i className="fa fa-linkedin-square"></i></Link>
-                <Link to="https://github.com/Kaylaw0127">Github <i className="fa fa-github"></i></Link>
+                <a href="https://www.linkedin.com/in/kaylaw0127/" target="_blank"> LinkedIn <i className="fa fa-linkedin-square"></i></a>
+                <a href="https://github.com/Kaylaw0127" target="_blank">Github <i className="fa fa-github"></i></a>
             </Navigation>
         </Drawer>
         <Content>
