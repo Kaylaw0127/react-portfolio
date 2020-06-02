@@ -9,6 +9,7 @@ class Portfolio extends Component {
        style={{
           backgroundImage: `url("contemporary_china.png")`,backgroundRepeat: 'repeat',width:'1500px',height:'1000px',color:'white'
        }}>
+         <div className="container">
            <div className="row">
                 <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
                 <CardTitle expand style={{color: '#fff', background: 'url() center/ cover no-repeat #46B6AC'}}>Bug Out</CardTitle>
@@ -114,7 +115,7 @@ class Portfolio extends Component {
               </Button>
                 </CardActions>
                 </Card>
-            
+                </div>
             </div>
         </div>
         )}
