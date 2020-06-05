@@ -10,7 +10,7 @@ class Portfolio extends Component {
           backgroundImage: `url("contemporary_china.png")`,backgroundRepeat: 'repeat',width:'1500px',height:'1000px',color:'white'
        }}>
          <div className="container">
-           <div className="row">
+           <div className="row-one">
                 <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
                 <CardTitle expand style={{color: '#fff', background: 'url() center/ cover no-repeat #46B6AC'}}>Bug Out</CardTitle>
                 {/* <CardText>
@@ -46,7 +46,7 @@ class Portfolio extends Component {
                 </Card>
              </div>
 
-             <div className="row">
+             <div className="row-two">
                 <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
                 <CardTitle expand style={{color: '#fff', background: 'url(upabove.png) center / cover'}}>Up Above</CardTitle>
                 {/* <CardText>
@@ -65,7 +65,7 @@ class Portfolio extends Component {
                 </Card>
                 
                 <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
-                <CardTitle expand style={{color: '#fff', background: 'url(eatdaburgz.png) center /cover no-repeat'}}>Burger Mania</CardTitle>
+                <CardTitle expand style={{color: '#fff', background: 'url(eatdaburgz.png) center /cover no-repeat', marginBottom: '20px'}}>Burger Mania</CardTitle>
                 {/* <CardText>
                     BURGER MANIA
                 </CardText> */}
@@ -81,7 +81,7 @@ class Portfolio extends Component {
                 </CardActions>
                 </Card>
             </div>
-            <div className="row">
+            <div className="row-three">
                 <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
                 <CardTitle expand style={{color: '#fff', background: 'url(workday.png) center / cover no-repeat'}}>Day Planner</CardTitle>
                 {/* <CardText>
