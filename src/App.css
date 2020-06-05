@@ -1,14 +1,33 @@
 /* ABOUT PAGE */
 .grid {
-    background-color: whitesmoke;
+    background-color: white;
+    display: inline-block;
     color: black;
-    margin: 50px 0px 0px 100px;
-    padding: 15px 0px 0px 25px;
+    margin: 2% 0% 0% 20%;
+    padding: 15px 15px 50px 25px;
 }
 
+.profileImg {
+    float: left;
+    
+}
+
+.paragraph {
+    line-height: 2;
+    padding-left: 300px;
+}
+
+.header {
+    color: #3D5A80;
+    font-size: 25px;
+    border-bottom: solid;
+    border-color: #cccccc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAV */
 .navbar-color {
     background-color: #3D5A80 !important;
-    
 }
 
 /* PORTFOLIO PAGE */
@@ -16,4 +35,6 @@
     background-color: whitesmoke;
     padding: 20px;
 }
+
+
 

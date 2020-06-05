@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Layout, Navigation, Drawer, Content, Header } from "react-mdl";
 import Main from "./components/main/main";
 import Resume from "./components/resume/Kayla_Ward_Resume_Web.pdf";
+
 function App() {
   return (
     <div className="demo-big-content">
@@ -12,8 +13,7 @@ function App() {
           className="navbar-color"
           title={
             <Link style={{ color: "white" }} to="/">
-              {" "}
-              Kayla Ward{" "}
+              Kayla Ward
             </Link>
           }
         >

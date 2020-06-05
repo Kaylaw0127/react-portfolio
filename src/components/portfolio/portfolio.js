@@ -1,124 +1,232 @@
-import React, { Component } from 'react';
-import { Card, CardTitle, CardActions, Button, CardMenu, IconButton, CardText } from "react-mdl";
-
+import React, { Component } from "react";
+import {
+  Card,
+  CardTitle,
+  CardActions,
+  Button,
+  CardMenu,
+  IconButton,
+  CardText,
+} from "react-mdl";
 
 class Portfolio extends Component {
-    render() {
-        return (
-       <div
-       style={{
-          backgroundImage: `url("contemporary_china.png")`,backgroundRepeat: 'repeat',width:'1500px',height:'1000px',color:'white'
-       }}>
-         <div className="container">
-           <div className="row-one">
-                <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
-                <CardTitle expand style={{color: '#fff', background: 'url() center/ cover no-repeat #46B6AC'}}>Bug Out</CardTitle>
-                {/* <CardText>
+  render() {
+    return (
+      <div
+        style={{
+          backgroundImage: `url("contemporary_china.png")`,
+          backgroundRepeat: "repeat",
+          width: "100%",
+          height: "100%",
+          color: "white",
+        }}
+      >
+        <div className="container">
+          <div className="row-one">
+            <Card
+              shadow={0}
+              style={{ width: "320px", height: "320px", margin: "auto" }}
+            >
+              <CardTitle
+                expand
+                style={{
+                  color: "#fff",
+                  background: "url() center/ cover no-repeat #46B6AC",
+                }}
+              >
+                Bug Out
+              </CardTitle>
+              {/* <CardText>
                     BUG OUT
                 </CardText> */}
-                <CardActions border>
-                <Button
-                colored
-                href="" target="_blank">
-                PREVIEW
-              </Button>
-              <Button colored href="">
-                GITHUB
-              </Button>
-                </CardActions>
-                </Card>
+              <CardActions border>
+                <Button colored href="" target="_blank">
+                  PREVIEW
+                </Button>
+                <Button colored href="">
+                  GITHUB
+                </Button>
+              </CardActions>
+            </Card>
 
-                <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
-                <CardTitle expand style={{color: '#fff', background: 'url(mealmate.png) center / cover no-repeat'}}>Meal Mate</CardTitle>
-                {/* <CardText>
+            <Card
+              shadow={0}
+              style={{ width: "320px", height: "320px", margin: "auto" }}
+            >
+              <CardTitle
+                expand
+                style={{
+                  color: "#fff",
+                  background: "url(mealmate.png) center / cover no-repeat",
+                }}
+              >
+                Meal Mate
+              </CardTitle>
+              {/* <CardText>
                     MEAL MATE INFO
                 </CardText> */}
-                <CardActions border>
+              <CardActions border>
                 <Button
-                colored
-                href="https://meals-mates.herokuapp.com/" target="_blank">
-                PREVIEW
-              </Button>
-              <Button colored href="https://github.com/Kaylaw0127/meal-mate" target="_blank">
-                GITHUB
-              </Button>
-                </CardActions>
-                </Card>
-             </div>
+                  colored
+                  href="https://meals-mates.herokuapp.com/"
+                  target="_blank"
+                >
+                  PREVIEW
+                </Button>
+                <Button
+                  colored
+                  href="https://github.com/Kaylaw0127/meal-mate"
+                  target="_blank"
+                >
+                  GITHUB
+                </Button>
+              </CardActions>
+            </Card>
+          </div>
 
-             <div className="row-two">
-                <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
-                <CardTitle expand style={{color: '#fff', background: 'url(upabove.png) center / cover'}}>Up Above</CardTitle>
-                {/* <CardText>
+          <div className="row-two">
+            <Card
+              shadow={0}
+              style={{ width: "320px", height: "320px", margin: "auto" }}
+            >
+              <CardTitle
+                expand
+                style={{
+                  color: "#fff",
+                  background: "url(upabove.png) center / cover",
+                }}
+              >
+                Up Above
+              </CardTitle>
+              {/* <CardText>
                     UP ABOVE
                 </CardText> */}
-                <CardActions border>
+              <CardActions border>
                 <Button
-                colored
-                href="https://kaylaw0127.github.io/Up-Above/" target="_blank">
-                PREVIEW
-              </Button>
-              <Button colored href="https://github.com/Kaylaw0127/Up-Above" target="_blank">
-                GITHUB
-              </Button>
-                </CardActions>
-                </Card>
-                
-                <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
-                <CardTitle expand style={{color: '#fff', background: 'url(eatdaburgz.png) center /cover no-repeat', marginBottom: '20px'}}>Burger Mania</CardTitle>
-                {/* <CardText>
+                  colored
+                  href="https://kaylaw0127.github.io/Up-Above/"
+                  target="_blank"
+                >
+                  PREVIEW
+                </Button>
+                <Button
+                  colored
+                  href="https://github.com/Kaylaw0127/Up-Above"
+                  target="_blank"
+                >
+                  GITHUB
+                </Button>
+              </CardActions>
+            </Card>
+
+            <Card
+              shadow={0}
+              style={{ width: "320px", height: "320px", margin: "auto" }}
+            >
+              <CardTitle
+                expand
+                style={{
+                  color: "#fff",
+                  background: "url(eatdaburgz.png) center /cover no-repeat",
+                  marginBottom: "20px",
+                }}
+              >
+                Burger Mania
+              </CardTitle>
+              {/* <CardText>
                     BURGER MANIA
                 </CardText> */}
-                <CardActions border>
+              <CardActions border>
                 <Button
-                colored
-                href="https://eeatdaburgz.herokuapp.com/" target="_blank">
-                PREVIEW
-              </Button>
-              <Button colored href="https://github.com/Kaylaw0127/burger" target="_blank">
-                GITHUB
-              </Button>
-                </CardActions>
-                </Card>
-            </div>
-            <div className="row-three">
-                <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
-                <CardTitle expand style={{color: '#fff', background: 'url(workday.png) center / cover no-repeat'}}>Day Planner</CardTitle>
-                {/* <CardText>
+                  colored
+                  href="https://eeatdaburgz.herokuapp.com/"
+                  target="_blank"
+                >
+                  PREVIEW
+                </Button>
+                <Button
+                  colored
+                  href="https://github.com/Kaylaw0127/burger"
+                  target="_blank"
+                >
+                  GITHUB
+                </Button>
+              </CardActions>
+            </Card>
+          </div>
+          <div className="row-three">
+            <Card
+              shadow={0}
+              style={{ width: "320px", height: "320px", margin: "auto" }}
+            >
+              <CardTitle
+                expand
+                style={{
+                  color: "#fff",
+                  background: "url(workday.png) center / cover no-repeat",
+                }}
+              >
+                Day Planner
+              </CardTitle>
+              {/* <CardText>
                     Day Planner
                 </CardText> */}
-                <CardActions border>
+              <CardActions border>
                 <Button
-                colored
-                href="https://kaylaw0127.github.io/day-planner/" target="_blank">
-                PREVIEW
-              </Button>
-              <Button colored href="https://github.com/Kaylaw0127/day-planner" target="_blank">
-                GITHUB
-              </Button>
-                </CardActions>
-                </Card>
-        
-                <Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
-                <CardTitle expand style={{color: '#fff', background: 'url(weather.png) center/ cover no-repeat'}}>Weather Dashboard</CardTitle>
-                {/* <CardText>
+                  colored
+                  href="https://kaylaw0127.github.io/day-planner/"
+                  target="_blank"
+                >
+                  PREVIEW
+                </Button>
+                <Button
+                  colored
+                  href="https://github.com/Kaylaw0127/day-planner"
+                  target="_blank"
+                >
+                  GITHUB
+                </Button>
+              </CardActions>
+            </Card>
+
+            <Card
+              shadow={0}
+              style={{ width: "320px", height: "320px", margin: "auto" }}
+            >
+              <CardTitle
+                expand
+                style={{
+                  color: "#fff",
+                  background: "url(weather.png) center/ cover no-repeat",
+                }}
+              >
+                Weather Dashboard
+              </CardTitle>
+              {/* <CardText>
                     WEATHER DASH
                 </CardText> */}
-                <CardActions border>
+              <CardActions border>
                 <Button
-                colored
-                href="https://kaylaw0127.github.io/weather-dash/" target="_blank">
-                PREVIEW
-              </Button>
-              <Button colored href="https://github.com/Kaylaw0127/weather-dash" target="_blank">
-                GITHUB
-              </Button>
-                </CardActions>
-                </Card>
-                </div>
-            </div>
+                  colored
+                  href="https://kaylaw0127.github.io/weather-dash/"
+                  target="_blank"
+                >
+                  PREVIEW
+                </Button>
+                <Button
+                  colored
+                  href="https://github.com/Kaylaw0127/weather-dash"
+                  target="_blank"
+                >
+                  GITHUB
+                </Button>
+              </CardActions>
+            </Card>
+          </div>
         </div>
-        )}
+      </div>
+    );
+  }
 }
 
 export default Portfolio;
