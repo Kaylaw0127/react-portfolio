@@ -3,13 +3,18 @@ import "./App.css";
 import { Link } from "react-router-dom";
 import { Layout, Navigation, Drawer, Content, Header } from "react-mdl";
 import Main from "./components/main/main";
-import Resume from "./components/resume/Kayla_Ward_Resume_Web.pdf"
+import Resume from "./components/resume/Kayla_Ward_Resume_Web.pdf";
 function App() {
   return (
     <div className="demo-big-content">
       <Layout>
-        <Header className="navbar-color" title={
-            <Link style={{color: "white"}} to="/"> Kayla Ward </Link>
+        <Header
+          className="navbar-color"
+          title={
+            <Link style={{ color: "white" }} to="/">
+              {" "}
+              Kayla Ward{" "}
+            </Link>
           }
         >
           <Navigation>
@@ -20,9 +25,10 @@ function App() {
         </Header>
         <Drawer title="">
           <Navigation>
-          <a href = {Resume} target = "_blank">Resume</a>
+            <a href={Resume} target="_blank">
+              Resume <i className="fa fa-file-text"></i>
+            </a>
             <a href="https://www.linkedin.com/in/kaylaw0127/" target="_blank">
-              {" "}
               LinkedIn <i className="fa fa-linkedin-square"></i>
             </a>
             <a href="https://github.com/Kaylaw0127" target="_blank">
