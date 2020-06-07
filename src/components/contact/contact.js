@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
 
 class Contact extends Component {
   render() {
@@ -12,7 +13,31 @@ class Contact extends Component {
           color: "white",
         }}
       >
-        <h1>Contact Page</h1>
+        <Grid className="contact-grid">
+          <Cell col={10}>
+          <div className="grid">
+            <h1 className="header">Contact</h1>
+
+            <div className="contact-list">
+              <List>
+                <ListItem>
+                  <ListItemContent>
+                    <i className="fa fa-phone"/>
+                    (530) 329-3059
+                  </ListItemContent>
+                </ListItem>
+
+                <ListItem>
+                  <ListItemContent>
+                    <i className="fa fa-envelope-o"/>
+                    kaylaw0127@gmail.com
+                  </ListItemContent>
+                </ListItem>
+              </List>
+            </div>
+            </div>
+          </Cell>
+        </Grid>
       </div>
     );
   }

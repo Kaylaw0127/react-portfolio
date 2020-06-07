@@ -8,6 +8,7 @@ import {
   IconButton,
   CardText,
 } from "react-mdl";
+import { Grid, Cell } from "react-mdl";
 
 class Portfolio extends Component {
   render() {
@@ -21,11 +22,11 @@ class Portfolio extends Component {
           color: "white",
         }}
       >
-        <div className="container">
-          <div className="row-one">
+        <Grid className="portfolio-grid-1">
+          <Cell col={4}>
             <Card
               shadow={0}
-              style={{ width: "320px", height: "320px", margin: "auto" }}
+              style={{ width: "320px", height: "320px", margin: "auto", margin: 'auto' }}
             >
               <CardTitle
                 expand
@@ -48,15 +49,15 @@ class Portfolio extends Component {
                 </Button>
               </CardActions>
             </Card>
-
-            <Card
-              shadow={0}
-              style={{ width: "320px", height: "320px", margin: "auto" }}
-            >
+          </Cell>
+          <Cell col={4}>
+            <Card shadow={0} style={{ width: "320px", height: "320px", margin: 'auto' }}>
               <CardTitle
                 expand
                 style={{
                   color: "#fff",
+                  border: 'solid',
+                  borderColor: 'white',
                   background: "url(mealmate.png) center / cover no-repeat",
                 }}
               >
@@ -82,13 +83,9 @@ class Portfolio extends Component {
                 </Button>
               </CardActions>
             </Card>
-          </div>
-
-          <div className="row-two">
-            <Card
-              shadow={0}
-              style={{ width: "320px", height: "320px", margin: "auto" }}
-            >
+          </Cell>
+          <Cell col={4}>
+            <Card shadow={0} style={{ width: "320px", height: "320px", margin: 'auto' }}>
               <CardTitle
                 expand
                 style={{
@@ -118,11 +115,11 @@ class Portfolio extends Component {
                 </Button>
               </CardActions>
             </Card>
-
-            <Card
-              shadow={0}
-              style={{ width: "320px", height: "320px", margin: "auto" }}
-            >
+          </Cell>
+        </Grid>
+        <Grid className="portfolio-grid-2">
+          <Cell col={4}>
+            <Card shadow={0} style={{ width: "320px", height: "320px", margin: 'auto' }}>
               <CardTitle
                 expand
                 style={{
@@ -153,12 +150,9 @@ class Portfolio extends Component {
                 </Button>
               </CardActions>
             </Card>
-          </div>
-          <div className="row-three">
-            <Card
-              shadow={0}
-              style={{ width: "320px", height: "320px", margin: "auto" }}
-            >
+          </Cell>
+          <Cell col={4}>
+            <Card shadow={0} style={{ width: "320px", height: "320px", margin: 'auto' }}>
               <CardTitle
                 expand
                 style={{
@@ -188,11 +182,9 @@ class Portfolio extends Component {
                 </Button>
               </CardActions>
             </Card>
-
-            <Card
-              shadow={0}
-              style={{ width: "320px", height: "320px", margin: "auto" }}
-            >
+          </Cell>
+          <Cell col={4}>
+            <Card shadow={0} style={{ width: "320px", height: "320px", margin: 'auto' }}>
               <CardTitle
                 expand
                 style={{
@@ -222,8 +214,8 @@ class Portfolio extends Component {
                 </Button>
               </CardActions>
             </Card>
-          </div>
-        </div>
+          </Cell>
+        </Grid>
       </div>
     );
   }
