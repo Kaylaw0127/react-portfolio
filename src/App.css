@@ -4,7 +4,13 @@
   color: black;
   margin: 2% 0% 0% 20%;
   padding: 15px 15px 50px 25px;
+  box-shadow: 0 0 10px 3px rgba(30, 80, 133, 0.7);
+  box-shadow: 0 0 0 7px -moz-mac-focusring;
+
+ 
 }
+
+
 
 /* ABOUT PAGE */
 .profileImg {
@@ -40,6 +46,8 @@
   color: black;
   margin: 2% 0% 0% 20%;
   padding: 15px 15px 50px 25px;
+  box-shadow: 0 0 10px 3px rgba(30, 80, 133, 0.7);
+  box-shadow: 0 0 0 7px -moz-mac-focusring;
 }
 
 .contact-list {
