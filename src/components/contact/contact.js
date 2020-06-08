@@ -1,98 +1,121 @@
 import React, { Component } from "react";
-// import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
+import axios from "axios";
+import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
 
-// class Contact extends Component {
-//   render() {
-//     return (
-//       <div
-//         style={{
-//           backgroundImage: `url("contemporary_china.png")`,
-//           backgroundRepeat: "repeat",
-//           width: "100%",
-//           height: "100%",
-//           color: "white",
-//         }}
-//       >
+class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "",
+      email: "",
+      message: "",
+    };
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    axios({
+      method: "POST",
+      url: "http://localhost:3002/send",
+      data: this.state,
+    }).then((response) => {
+      if (response.data.status === "success") {
+        alert("Message Sent.");
+        this.resetForm();
+      } else if (response.data.status === "fail") {
+        alert("Message failed to send.");
+      }
+    });
+  }
+
+  resetForm() {
+    this.setState({ name: "", email: "", message: "" });
+  }
+
+  render() {
+    return (
     
-        {/* <Grid className="contact-grid">
+        <Grid 
+          style={{
+            backgroundImage: `url("contemporary_china.png")`,
+            backgroundRepeat: "repeat",
+            width: "100%",
+            height: "100%",
+            color: "white",
+           }}
+        className="grid-contact">
           <Cell col={10}>
-          <div className="grid">
-            <h1 className="header">Contact</h1>
+            <div className="contact-grid">
+              <h1 className="header">Contact</h1>
 
-            <div className="contact-list">
-              <List>
-                <ListItem>
-                  <ListItemContent>
-                    <i className="fa fa-phone"/>
-                    (530) 329-3059
-                  </ListItemContent>
-                </ListItem>
-
-                <ListItem>
-                  <ListItemContent>
-                    <i className="fa fa-envelope-o"/>
-                    kaylaw0127@gmail.com
-                  </ListItemContent>
-                </ListItem>
-              </List>
-            </div>
+              <div className="contact-list">
+                <p className="contact-paragraph">
+                  <i className="fa fa-phone fa-fw" />
+                  MOBILE: (530) 329-3059
+                </p>
+                <p className="contact-paragraph">
+                  <i className="fa fa-envelope-o fa-fw" />
+                  EMAIL: kaylaw0127@gmail.com
+                </p>
+              </div>
+              <form
+                id="contact-form"
+                onSubmit={this.handleSubmit.bind(this)}
+                method="POST"
+              >
+                <div className="form-group">
+                  <label htmlFor="name">Name</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="name"
+                    value={this.state.name}
+                    onChange={this.onNameChange.bind(this)}
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="exampleInputEmail1">Email address</label>
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="email"
+                    aria-describedby="emailHelp"
+                    value={this.state.email}
+                    onChange={this.onEmailChange.bind(this)}
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="message">Message</label>
+                  <textarea
+                    className="form-control"
+                    rows="5"
+                    id="message"
+                    value={this.state.message}
+                    onChange={this.onMessageChange.bind(this)}
+                  />
+                </div>
+                <button type="submit" className="btn btn-primary">
+                  Submit
+                </button>
+              </form>
             </div>
           </Cell>
-        </Grid> */}
-      
-
-//         </div>
-//     );
-//   }
-// }
-
-
-class Contact extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        name: '',
-        email: '',
-        message: ''
-      }
-    }
-  
-  render() {
-   return(
-     <div className="App">
-     <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
-      <div className="form-group">
-          <label htmlFor="name">Name</label>
-          <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)} />
-      </div>
-      <div className="form-group">
-          <label htmlFor="exampleInputEmail1">Email address</label>
-          <input type="email" className="form-control" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
-      </div>
-      <div className="form-group">
-          <label htmlFor="message">Message</label>
-          <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
-      </div>
-      <button type="submit" className="btn btn-primary">Submit</button>
-      </form>
-      </div>
-   );
+        </Grid>
+     
+    );
   }
-  
-    onNameChange(event) {
-      this.setState({name: event.target.value})
-    }
-  
-    onEmailChange(event) {
-      this.setState({email: event.target.value})
-    }
-  
-    onMessageChange(event) {
-      this.setState({message: event.target.value})
-    }
-  
-  handleSubmit(event) {
+
+  onNameChange(event) {
+    this.setState({ name: event.target.value });
   }
+
+  onEmailChange(event) {
+    this.setState({ email: event.target.value });
   }
-  
-  export default Contact;
+
+  onMessageChange(event) {
+    this.setState({ message: event.target.value });
+  }
+}
+
+export default Contact;

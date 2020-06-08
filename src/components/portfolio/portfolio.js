@@ -22,11 +22,22 @@ class Portfolio extends Component {
           color: "white",
         }}
       >
-        <Grid className="portfolio-grid-1">
+      <div className="grid">
+       <h1 className="header">Portfolio</h1>
+
+        <Grid
+          className="portfolio-grid"
+
+        >
           <Cell col={4}>
             <Card
               shadow={0}
-              style={{ width: "320px", height: "320px", margin: "auto", margin: 'auto' }}
+              style={{
+                width: "320px",
+                height: "320px",
+                margin: "auto",
+                margin: "auto",
+              }}
             >
               <CardTitle
                 expand
@@ -51,13 +62,16 @@ class Portfolio extends Component {
             </Card>
           </Cell>
           <Cell col={4}>
-            <Card shadow={0} style={{ width: "320px", height: "320px", margin: 'auto' }}>
+            <Card
+              shadow={0}
+              style={{ width: "320px", height: "320px", margin: "auto" }}
+            >
               <CardTitle
                 expand
                 style={{
                   color: "#fff",
-                  border: 'solid',
-                  borderColor: 'white',
+                  border: "solid",
+                  borderColor: "white",
                   background: "url(mealmate.png) center / cover no-repeat",
                 }}
               >
@@ -85,7 +99,10 @@ class Portfolio extends Component {
             </Card>
           </Cell>
           <Cell col={4}>
-            <Card shadow={0} style={{ width: "320px", height: "320px", margin: 'auto' }}>
+            <Card
+              shadow={0}
+              style={{ width: "320px", height: "320px", margin: "auto" }}
+            >
               <CardTitle
                 expand
                 style={{
@@ -117,9 +134,15 @@ class Portfolio extends Component {
             </Card>
           </Cell>
         </Grid>
-        <Grid className="portfolio-grid-2">
+        <Grid
+          className="portfolio-grid"
+
+        >
           <Cell col={4}>
-            <Card shadow={0} style={{ width: "320px", height: "320px", margin: 'auto' }}>
+            <Card
+              shadow={0}
+              style={{ width: "320px", height: "320px", margin: "auto" }}
+            >
               <CardTitle
                 expand
                 style={{
@@ -152,7 +175,10 @@ class Portfolio extends Component {
             </Card>
           </Cell>
           <Cell col={4}>
-            <Card shadow={0} style={{ width: "320px", height: "320px", margin: 'auto' }}>
+            <Card
+              shadow={0}
+              style={{ width: "320px", height: "320px", margin: "auto" }}
+            >
               <CardTitle
                 expand
                 style={{
@@ -184,7 +210,10 @@ class Portfolio extends Component {
             </Card>
           </Cell>
           <Cell col={4}>
-            <Card shadow={0} style={{ width: "320px", height: "320px", margin: 'auto' }}>
+            <Card
+              shadow={0}
+              style={{ width: "320px", height: "320px", margin: "auto" }}
+            >
               <CardTitle
                 expand
                 style={{
@@ -216,6 +245,7 @@ class Portfolio extends Component {
             </Card>
           </Cell>
         </Grid>
+      </div>
       </div>
     );
   }
