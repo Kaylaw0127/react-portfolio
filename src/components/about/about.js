@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Grid, Cell } from "react-mdl";
+import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
 import picture from "./profile-pic.jpg";
+
 
 class About extends Component {
   render() {
@@ -19,21 +20,33 @@ class About extends Component {
             <div className="grid">
             <h1 className="header">About Me</h1>
               <img className="profileImg" src={picture} alt="ProfilePic" />
-              <p className="paragraph">
+              <List>
+                <ListItem style={{
+                        lineHeight: "2",
+                        fontFamily: "Georgia, 'Times New Roman', Times, serif"
+                      }}>>
                 I am a full stack web developer with a background in business
                 management and human resources.
-              </p>
-              <p className="paragraph">
+                </ListItem>
+                <ListItem style={{
+                        lineHeight: "2",
+                        fontFamily: "Georgia, 'Times New Roman', Times, serif"
+                      }}>>
                 I am highly knowledgable with both client and server side
                 languages, responsive frameworks, and best code practices. I am
-                experienced with <b>HTML, CSS, JavaScript, jQuery, API 's, Node.js,
-                React.js, MongoDB, and MySQL.</b>
-                <p className="paragraph"></p>
+                experienced with HTML, CSS, JavaScript, jQuery, API 's, Node.js,
+                React.js, MongoDB, and MySQL.
+                </ListItem>
+                <ListItem style={{
+                        lineHeight: "2",
+                        fontFamily: "Georgia, 'Times New Roman', Times, serif"
+                        }}>>
                 As a graduate from the UC Davis Coding Bootcamp, I have
                 developed numerous skills, as well as, strengthened existing
                 abilities. I am dedicated to perfecting my craft while working
                 along side seasoned developers.
-              </p>
+                </ListItem>
+              </List>
             </div>
           </Cell>
         </Grid>

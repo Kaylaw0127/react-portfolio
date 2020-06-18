@@ -15,12 +15,11 @@
 /* ABOUT PAGE */
 .profileImg {
   float: left;
+  margin-top: 20px;
+  box-shadow: 0 0 10px 3px rgba(133, 131, 131, 0.7);
 }
 
-.paragraph {
-  line-height: 2;
-  padding-left: 300px;
-}
+
 
 .header {
   color: #3d5a80;
@@ -52,6 +51,7 @@
 
 .contact-list {
     font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .contact-form {
@@ -69,4 +69,8 @@
   text-align: center;
   font-family: "Rochester", cursive;
   font-size: 30px;
+}
+
+.form-group {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }

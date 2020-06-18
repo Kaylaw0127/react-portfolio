@@ -43,7 +43,7 @@ class Portfolio extends Component {
                 expand
                 style={{
                   color: "#fff",
-                  background: "url() center/ cover no-repeat #46B6AC",
+                  background: "url(bug-out.png) center/ cover no-repeat",
                 }}
               >
                 Bug Out
@@ -52,10 +52,10 @@ class Portfolio extends Component {
                     BUG OUT
                 </CardText> */}
               <CardActions border>
-                <Button colored href="" target="_blank">
+                <Button colored href="https://bugouts.herokuapp.com/" target="_blank">
                   PREVIEW
                 </Button>
-                <Button colored href="">
+                <Button colored href="https://github.com/Kaylaw0127/bug-out">
                   GITHUB
                 </Button>
               </CardActions>
