@@ -3,10 +3,7 @@ import {
   Card,
   CardTitle,
   CardActions,
-  Button,
-  CardMenu,
-  IconButton,
-  CardText,
+  Button
 } from "react-mdl";
 import { Grid, Cell } from "react-mdl";
 
@@ -35,7 +32,6 @@ class Portfolio extends Component {
               style={{
                 width: "320px",
                 height: "320px",
-                margin: "auto",
                 margin: "auto",
               }}
             >

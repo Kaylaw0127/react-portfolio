@@ -25,7 +25,7 @@ function App() {
         </Header>
         <Drawer title="">
           <Navigation>
-            <a href={Resume} target="_blank">
+            <a href={Resume} target="_blank" rel="noopener noreferrer">
               Resume <i className="fa fa-file-text"></i>
             </a>
             <a href="https://www.linkedin.com/in/kaylaw0127/" target="_blank" rel="noopener noreferrer">
