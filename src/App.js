@@ -34,9 +34,7 @@ function App() {
             <a href="https://github.com/Kaylaw0127" target="_blank" rel="noopener noreferrer">
               Github <i className="fa fa-github"></i>
             </a>
-            <Link to="/">About</Link>
-            <Link to="/portfolio">Portfolio</Link>
-            <Link to="/contact">Contact</Link>
+      
           </Navigation>
         </Drawer>
         <Content>
