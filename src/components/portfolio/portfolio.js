@@ -85,6 +85,7 @@ class Portfolio extends Component {
                   colored
                   href="https://meals-mates.herokuapp.com/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   PREVIEW
                 </Button>
@@ -92,6 +93,7 @@ class Portfolio extends Component {
                   colored
                   href="https://github.com/Kaylaw0127/meal-mate"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   GITHUB
                 </Button>
@@ -120,6 +122,7 @@ class Portfolio extends Component {
                   colored
                   href="https://kaylaw0127.github.io/Up-Above/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   PREVIEW
                 </Button>
@@ -127,6 +130,7 @@ class Portfolio extends Component {
                   colored
                   href="https://github.com/Kaylaw0127/Up-Above"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   GITHUB
                 </Button>
@@ -161,6 +165,7 @@ class Portfolio extends Component {
                   colored
                   href="https://eeatdaburgz.herokuapp.com/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   PREVIEW
                 </Button>
@@ -168,6 +173,7 @@ class Portfolio extends Component {
                   colored
                   href="https://github.com/Kaylaw0127/burger"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   GITHUB
                 </Button>
@@ -196,6 +202,7 @@ class Portfolio extends Component {
                   colored
                   href="https://kaylaw0127.github.io/day-planner/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   PREVIEW
                 </Button>
@@ -203,6 +210,7 @@ class Portfolio extends Component {
                   colored
                   href="https://github.com/Kaylaw0127/day-planner"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   GITHUB
                 </Button>
@@ -231,6 +239,7 @@ class Portfolio extends Component {
                   colored
                   href="https://kaylaw0127.github.io/weather-dash/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   PREVIEW
                 </Button>
@@ -238,6 +247,7 @@ class Portfolio extends Component {
                   colored
                   href="https://github.com/Kaylaw0127/weather-dash"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   GITHUB
                 </Button>

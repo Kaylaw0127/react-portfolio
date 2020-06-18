@@ -28,12 +28,15 @@ function App() {
             <a href={Resume} target="_blank">
               Resume <i className="fa fa-file-text"></i>
             </a>
-            <a href="https://www.linkedin.com/in/kaylaw0127/" target="_blank">
+            <a href="https://www.linkedin.com/in/kaylaw0127/" target="_blank" rel="noopener noreferrer">
               LinkedIn <i className="fa fa-linkedin-square"></i>
             </a>
-            <a href="https://github.com/Kaylaw0127" target="_blank">
+            <a href="https://github.com/Kaylaw0127" target="_blank" rel="noopener noreferrer">
               Github <i className="fa fa-github"></i>
             </a>
+            <Link to="/">About</Link>
+            <Link to="/portfolio">Portfolio</Link>
+            <Link to="/contact">Contact</Link>
           </Navigation>
         </Drawer>
         <Content>
